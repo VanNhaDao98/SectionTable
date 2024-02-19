@@ -16,6 +16,13 @@
 		D07EFE832B666E0300AC78D0 /* SectionTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07EFE822B666E0300AC78D0 /* SectionTableTests.swift */; };
 		D07EFE8D2B666E0300AC78D0 /* SectionTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07EFE8C2B666E0300AC78D0 /* SectionTableUITests.swift */; };
 		D07EFE8F2B666E0300AC78D0 /* SectionTableUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07EFE8E2B666E0300AC78D0 /* SectionTableUITestsLaunchTests.swift */; };
+		D091E0792B80A60D005CE97E /* TableReusableViewRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091E0782B80A60D005CE97E /* TableReusableViewRegister.swift */; };
+		D091E07B2B80FE4E005CE97E /* TableSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091E07A2B80FE4E005CE97E /* TableSpacing.swift */; };
+		D091E07D2B80FFE7005CE97E /* TableSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091E07C2B80FFE7005CE97E /* TableSection.swift */; };
+		D091E0822B810817005CE97E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091E0802B810817005CE97E /* TableViewCell.swift */; };
+		D091E0832B810817005CE97E /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D091E0812B810817005CE97E /* TableViewCell.xib */; };
+		D091E0852B811866005CE97E /* SectionedTableAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091E0842B811866005CE97E /* SectionedTableAdapter.swift */; };
+		D091E0872B82611C005CE97E /* BorderSpacingHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D091E0862B82611C005CE97E /* BorderSpacingHeaderFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,13 @@
 		D07EFE882B666E0300AC78D0 /* SectionTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SectionTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07EFE8C2B666E0300AC78D0 /* SectionTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableUITests.swift; sourceTree = "<group>"; };
 		D07EFE8E2B666E0300AC78D0 /* SectionTableUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionTableUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D091E0782B80A60D005CE97E /* TableReusableViewRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableReusableViewRegister.swift; sourceTree = "<group>"; };
+		D091E07A2B80FE4E005CE97E /* TableSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSpacing.swift; sourceTree = "<group>"; };
+		D091E07C2B80FFE7005CE97E /* TableSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableSection.swift; sourceTree = "<group>"; };
+		D091E0802B810817005CE97E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		D091E0812B810817005CE97E /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		D091E0842B811866005CE97E /* SectionedTableAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionedTableAdapter.swift; sourceTree = "<group>"; };
+		D091E0862B82611C005CE97E /* BorderSpacingHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderSpacingHeaderFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +113,7 @@
 		D07EFE6A2B666E0200AC78D0 /* SectionTable */ = {
 			isa = PBXGroup;
 			children = (
+				D091E0772B80A401005CE97E /* SectionedTable */,
 				D07EFE6B2B666E0200AC78D0 /* AppDelegate.swift */,
 				D07EFE6D2B666E0200AC78D0 /* SceneDelegate.swift */,
 				D07EFE6F2B666E0200AC78D0 /* ViewController.swift */,
@@ -106,6 +121,8 @@
 				D07EFE742B666E0300AC78D0 /* Assets.xcassets */,
 				D07EFE762B666E0300AC78D0 /* LaunchScreen.storyboard */,
 				D07EFE792B666E0300AC78D0 /* Info.plist */,
+				D091E0802B810817005CE97E /* TableViewCell.swift */,
+				D091E0812B810817005CE97E /* TableViewCell.xib */,
 			);
 			path = SectionTable;
 			sourceTree = "<group>";
@@ -125,6 +142,18 @@
 				D07EFE8E2B666E0300AC78D0 /* SectionTableUITestsLaunchTests.swift */,
 			);
 			path = SectionTableUITests;
+			sourceTree = "<group>";
+		};
+		D091E0772B80A401005CE97E /* SectionedTable */ = {
+			isa = PBXGroup;
+			children = (
+				D091E0782B80A60D005CE97E /* TableReusableViewRegister.swift */,
+				D091E07A2B80FE4E005CE97E /* TableSpacing.swift */,
+				D091E07C2B80FFE7005CE97E /* TableSection.swift */,
+				D091E0842B811866005CE97E /* SectionedTableAdapter.swift */,
+				D091E0862B82611C005CE97E /* BorderSpacingHeaderFooterView.swift */,
+			);
+			path = SectionedTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D07EFE782B666E0300AC78D0 /* LaunchScreen.storyboard in Resources */,
+				D091E0832B810817005CE97E /* TableViewCell.xib in Resources */,
 				D07EFE752B666E0300AC78D0 /* Assets.xcassets in Resources */,
 				D07EFE732B666E0200AC78D0 /* Main.storyboard in Resources */,
 			);
@@ -259,7 +289,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D07EFE702B666E0200AC78D0 /* ViewController.swift in Sources */,
+				D091E0792B80A60D005CE97E /* TableReusableViewRegister.swift in Sources */,
+				D091E0872B82611C005CE97E /* BorderSpacingHeaderFooterView.swift in Sources */,
+				D091E07D2B80FFE7005CE97E /* TableSection.swift in Sources */,
+				D091E07B2B80FE4E005CE97E /* TableSpacing.swift in Sources */,
 				D07EFE6C2B666E0200AC78D0 /* AppDelegate.swift in Sources */,
+				D091E0852B811866005CE97E /* SectionedTableAdapter.swift in Sources */,
+				D091E0822B810817005CE97E /* TableViewCell.swift in Sources */,
 				D07EFE6E2B666E0200AC78D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
